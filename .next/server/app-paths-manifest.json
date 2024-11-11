@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/wishlist/page": "app/wishlist/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/cartpage/checkout/page": "app/cartpage/checkout/page.js",
+  "/cartpage/page": "app/cartpage/page.js"
+}

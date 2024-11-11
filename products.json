@@ -1,0 +1,282 @@
+[
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$26.48",
+        "discountedPrice": "$16.48",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg1",
+        "imageAlt": "prodImg1"
+    },
+    {
+        "title": "Girl Suit",
+        "department": "English Department",
+        "originalPrice": "$24.99",
+        "discountedPrice": "$14.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg2",
+        "imageAlt": "prodImg2"
+    },
+    {
+        "title": "Top T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$20.00",
+        "discountedPrice": "$12.00",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg3",
+        "imageAlt": "prodImg3"
+    },
+    {
+        "title": "Graphic Design",
+        "department": "English Department",
+        "originalPrice": "$22.50",
+        "discountedPrice": "$15.00",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg4",
+        "imageAlt": "prodImg4"
+    },
+    {
+        "title": "Graphic Design",
+        "department": "English Department",
+        "originalPrice": "$27.99",
+        "discountedPrice": "$19.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg5",
+        "imageAlt": "prodImg5"
+    },
+    {
+        "title": "Graphic Design",
+        "department": "English Department",
+        "originalPrice": "$25.00",
+        "discountedPrice": "$18.00",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg6",
+        "imageAlt": "prodImg6"
+    },
+    {
+        "title": "Polo T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$23.48",
+        "discountedPrice": "$15.48",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg7",
+        "imageAlt": "prodImg7"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$21.99",
+        "discountedPrice": "$12.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg8",
+        "imageAlt": "prodImg8"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$26.48",
+        "discountedPrice": "$16.48",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg1",
+        "imageAlt": "prodImg1"
+    },
+    {
+        "title": "Girl Suit",
+        "department": "English Department",
+        "originalPrice": "$24.99",
+        "discountedPrice": "$14.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg2",
+        "imageAlt": "prodImg2"
+    },
+    {
+        "title": "Top T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$20.00",
+        "discountedPrice": "$12.00",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg3",
+        "imageAlt": "prodImg3"
+    },
+    {
+        "title": "Graphic Design",
+        "department": "English Department",
+        "originalPrice": "$22.50",
+        "discountedPrice": "$15.00",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg4",
+        "imageAlt": "prodImg4"
+    },
+    {
+        "title": "Graphic Design",
+        "department": "English Department",
+        "originalPrice": "$27.99",
+        "discountedPrice": "$19.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg5",
+        "imageAlt": "prodImg5"
+    },
+    {
+        "title": "Graphic Design",
+        "department": "English Department",
+        "originalPrice": "$25.00",
+        "discountedPrice": "$18.00",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg6",
+        "imageAlt": "prodImg6"
+    },
+    {
+        "title": "Polo T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$23.48",
+        "discountedPrice": "$15.48",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg7",
+        "imageAlt": "prodImg7"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$21.99",
+        "discountedPrice": "$12.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg8",
+        "imageAlt": "prodImg8"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$21.99",
+        "discountedPrice": "$12.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg9",
+        "imageAlt": "prodImg8"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$21.99",
+        "discountedPrice": "$12.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg10",
+        "imageAlt": "prodImg8"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$21.99",
+        "discountedPrice": "$12.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg11",
+        "imageAlt": "prodImg8"
+    },
+    {
+        "title": "T-Shirt",
+        "department": "English Department",
+        "originalPrice": "$21.99",
+        "discountedPrice": "$12.99",
+        "colors": [
+            "#252B42",
+            "#23856D",
+            "#E77C40",
+            "#252B42"
+        ],
+        "imageSrc": "prodImg12",
+        "imageAlt": "prodImg8"
+    }
+]

@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String      @id @default(uuid())
+  clerkUserId String      @unique
+  email       String      @unique
+  username    String?     @unique
+  name        String?
+  imageUrl    String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  cart        cartItems[] @relation("cartItem")
+  Whislist    Whislist[]
+}
+
+model cartItems {
+  id         String  @id @default(uuid())
+  userId     String
+  quantity   Int
+  product_id String? @db.VarChar(255)
+  user       User    @relation("cartItem", fields: [userId], references: [id])
+}
+
+model Products {
+  title           String?   @db.VarChar(255)
+  colors          Json?
+  description     String?   @db.VarChar(255)
+  createdat       DateTime? @default(now()) @db.Timestamp(6)
+  discountedprice Decimal?  @db.Decimal(10, 2)
+  imagealt        String?   @db.VarChar(255)
+  imagesrc        String?   @db.VarChar(255)
+  originalprice   Decimal?  @db.Decimal(10, 2)
+  updatedat       DateTime? @default(now()) @db.Timestamp(6)
+  id              String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  category        String?   @db.VarChar(255)
+  rating          String?   @db.VarChar(255)
+}
+
+model Whislist {
+  id         String  @id @default(uuid())
+  userId     String
+  user       User    @relation(references: [id], fields: [userId])
+  product_id String? @db.VarChar(255)
+}
