@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsCart, BsPerson, BsSearch, BsShop } from 'react-icons/bs';
+import { BsCart, BsPerson, BsSearch } from 'react-icons/bs';
 import { CiHeart } from 'react-icons/ci';
 import {
     SignInButton,
@@ -11,10 +11,13 @@ import { checkUser } from '../actions/checkUser';
 import Link from 'next/link';
 import { currentUser } from '@clerk/nextjs/server';
 import ClientBurgerMenu from './burgerMenu/clientBurgerMenu'
+import SearchCompo from '../components/searchCompo'
 
-async function Header() {
+async function Header({ params }) {
     await checkUser()
     const user = await currentUser()
+
+    console.log('headerParam', params)
 
     return (
         <div className="w-full bg-white py-6 text-[14px] font-bold leading-6  text-black relative">
@@ -43,10 +46,8 @@ async function Header() {
                                 </SignedOut>
                             </div>
                         </div>
-                        <div className='cursor-pointer'>
-                            <BsSearch size={18} />
-                        </div>
-                        <Link href={'/cartpage?id=1'} className='cursor-pointer'>
+                        {<SearchCompo />}
+                        <Link href={'/cartpage?id=1'} className='cursor-pointer' oncli>
                             <BsCart size={18} />
                         </Link>
                         <Link href={'/wishlist'} className='cursor-pointer'>
@@ -70,8 +71,13 @@ async function Header() {
                             </SignedOut>
                         </div>
                     </div>
-                    <BsSearch size={18} className='cursor-pointer' />
-                    <BsShop size={18} className='cursor-pointer' />
+                    {<SearchCompo />}
+                    <Link href={'/cartpage?id=1'} className='cursor-pointer'>
+                        <BsCart size={18} />
+                    </Link>
+                    <Link href={'/wishlist'} className='cursor-pointer'>
+                        <CiHeart size={24} />
+                    </Link>
                     <ClientBurgerMenu />
                 </div>
             </div >
