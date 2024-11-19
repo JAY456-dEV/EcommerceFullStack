@@ -193,7 +193,7 @@ function ContactDetail() {
                                             <div className="flex flex-col gap-1">
                                                 <p className="text-base font-bold">{products.title}</p>
                                                 <p className="text-gray-500 text-sm">Color: black</p>
-                                                <div className="flex lg:my-0 my-2 items-center gap-2 rounded-md py-[2px] px-2 border border-gray-400">
+                                                <div className="flex lg:my-0 my-2 items-center gap-2 rounded-md py-[2px] px-2 border border-gray-400 w-fit">
                                                     <MinusIcon className="cursor-pointer" size={19} onClick={() => handleAddMultipleItem(matchedProd.id, 'Decrease')} />
                                                     <p>{matchedProd.quantity}</p>
                                                     <PlusIcon className="cursor-pointer" size={19} onClick={() => handleAddMultipleItem(matchedProd.id, 'Increase')} />
