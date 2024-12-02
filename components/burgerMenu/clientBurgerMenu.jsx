@@ -16,7 +16,7 @@ function ClientBurgerMenu() {
         <div>
             {!popUp ? <CiMenuBurger size={23} className='cursor-pointer' onClick={() => handleOpenPopup()} /> : <RxCross2 size={24} className='cursor-pointer' onClick={() => setPopUp(false)} />}
             {
-                <div className={`absolute top-[79px] left-0 w-full z-10 bg-white pt-3 pb-6 ${popUp ? `h-[320px] opacity-100` : 'h-0 opacity-0'} transition-all ease-linear`}>
+                <div className={`absolute top-[79px] left-0 w-full z-10 bg-white pt-3 pb-6 ${popUp ? `h-[320px] opacity-100` : 'h-0 opacity-0 hidden'} transition-all ease-linear`}>
                     <div className='max-w-[90%] mx-auto'>
                         <ul className="flex flex-col gap-5">
                             {[
