@@ -58,7 +58,7 @@ function CartPage() {
             } finally {
                 setLoading(false); // Set loading to false after the request
             }
-            console.log(dataRedux)
+            // console.log(dataRedux)
         }
         handleData(); // Call the async function inside useEffect
     }, [user]); // Re-run the effect when the user changes

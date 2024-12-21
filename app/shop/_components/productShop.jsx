@@ -187,7 +187,7 @@ function ProductShop() {
 
 
     useEffect(() => {
-        if (filterOption.priceRange !== '' || filterOption.rating !== '' || filterOption.priceRange !== '') {
+        if (filterOption.priceRange !== '' || filterOption.rating !== '' || filterOption.gender !== '') {
             function handleFilterData(data) {
                 let dataPrice = data.filter((item) => {
                     if (filterOption.priceRange == '0-10') {
@@ -207,7 +207,9 @@ function ProductShop() {
 
             function handleGender(Data) {
                 let dataPrice = Data.filter((item) => {
+                    console.log(item)
                     if (filterOption.gender == 'men') {
+                        console.log(item.category)
                         return item.category == 'men'
                     } else if (filterOption.gender == 'women') {
                         return item.category == 'women'
@@ -251,9 +253,10 @@ function ProductShop() {
     // }
 
     function handleSelectedValue(e) {
+        console.log(e.target.value)
         setFilterOption((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
-
+    console.log(filterOption)
     function handleLoadMore() {
         if (currentPageData < Math.ceil(copyData.length / perPageData)) {
             setCurrentPageData(prev => prev + 1)
@@ -261,7 +264,7 @@ function ProductShop() {
     }
 
     return (
-        (data && data.length && !loading ? <div className='w-[90%] mx-auto px-5'>
+        <div className='w-[90%] mx-auto px-5'>
             <div className='flex justify-between flex-wrap items-center mt-10 gap-5'>
                 <div>
                     <p className='text-gray-500'>Showing all 12 results</p>
@@ -365,77 +368,76 @@ function ProductShop() {
                 </div>
             </div>
         </div>
-            :
-            <>
-                <div className='w-[90%] mx-auto px-5'>
-                    <div className='flex justify-between flex-wrap items-center mt-10 gap-5'>
-                        <div>
-                            <ShimmerDiv mode="light" height={45} width={200} />
-                        </div>
+        // :
+        // <>
+        //     <div className='w-[90%] mx-auto px-5'>
+        //         <div className='flex justify-between flex-wrap items-center mt-10 gap-5'>
+        //             <div>
+        //                 <ShimmerDiv mode="light" height={45} width={200} />
+        //             </div>
 
-                        <div className='flex items-center gap-4'>
-                            <ShimmerDiv mode="light" height={45} width={170} />
-                        </div>
+        //             <div className='flex items-center gap-4'>
+        //                 <ShimmerDiv mode="light" height={45} width={170} />
+        //             </div>
 
-                        <div className='flex flex-col sm:flex-row items-start sm:items-center gap-5'>
-                            <ShimmerDiv mode="light" height={45} width={200} />
-                        </div>
-                    </div>
+        //             <div className='flex flex-col sm:flex-row items-start sm:items-center gap-5'>
+        //                 <ShimmerDiv mode="light" height={45} width={200} />
+        //             </div>
+        //         </div>
 
-                    <div className='flex gap-12'>
-                        <div className="max-w-lg mt-14">
-                            <h2 className="text-2xl font-bold mb-3">
-                                <ShimmerDiv mode="light" height={15} width={120} />
-                            </h2>
-                            <div className="mb-4">
-                                <label className="block mb-2 text-sm font-medium text-gray-700">
-                                    <ShimmerDiv mode="light" height={15} width={120} />
-                                </label>
-                                <div
-                                    name='priceRange'
-                                    className="block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200"
-                                >
-                                    <ShimmerDiv mode="light" height={45} width={200} />
-                                </div>
-                            </div>
+        //         <div className='flex gap-12'>
+        //             <div className="max-w-lg mt-14">
+        //                 <h2 className="text-2xl font-bold mb-3">
+        //                     <ShimmerDiv mode="light" height={15} width={120} />
+        //                 </h2>
+        //                 <div className="mb-4">
+        //                     <label className="block mb-2 text-sm font-medium text-gray-700">
+        //                         <ShimmerDiv mode="light" height={15} width={120} />
+        //                     </label>
+        //                     <div
+        //                         name='priceRange'
+        //                         className="block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200"
+        //                     >
+        //                         <ShimmerDiv mode="light" height={45} width={200} />
+        //                     </div>
+        //                 </div>
 
-                            <div className="mb-4">
-                                <label className="block mb-2 text-sm font-medium text-gray-700">
-                                    <ShimmerDiv mode="light" height={15} width={120} />
-                                </label>
-                                <div
-                                    name='gender'
-                                    className="block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200"
-                                >
-                                    <ShimmerDiv mode="light" height={45} width={200} />
-                                </div>
-                            </div>
+        //                 <div className="mb-4">
+        //                     <label className="block mb-2 text-sm font-medium text-gray-700">
+        //                         <ShimmerDiv mode="light" height={15} width={120} />
+        //                     </label>
+        //                     <div
+        //                         name='gender'
+        //                         className="block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200"
+        //                     >
+        //                         <ShimmerDiv mode="light" height={45} width={200} />
+        //                     </div>
+        //                 </div>
 
-                            <div className="mb-4">
-                                <label className="block mb-2 text-sm font-medium text-gray-700">
-                                    <ShimmerDiv mode="light" height={15} width={120} />
-                                </label>
-                                <div className="">
-                                    {Array.from({ length: 6 }, (_, index) => (
-                                        <ShimmerDiv mode="light" height={45} width={200} />
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='grid sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8'>
-                                {Array.from({ length: 6 }, (_, index) => (
-                                    <ShimmerDiv mode="light" height={300} width={300} />
-                                ))}
-                            </div>
-                            <div className='flex justify-center mt-10'>
-                                <ShimmerDiv mode="light" height={45} width={200} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
-        )
+        //                 <div className="mb-4">
+        //                     <label className="block mb-2 text-sm font-medium text-gray-700">
+        //                         <ShimmerDiv mode="light" height={15} width={120} />
+        //                     </label>
+        //                     <div className="">
+        //                         {Array.from({ length: 6 }, (_, index) => (
+        //                             <ShimmerDiv mode="light" height={45} width={200} />
+        //                         ))}
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //             <div>
+        //                 <div className='grid sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8'>
+        //                     {Array.from({ length: 6 }, (_, index) => (
+        //                         <ShimmerDiv mode="light" height={300} width={300} />
+        //                     ))}
+        //                 </div>
+        //                 <div className='flex justify-center mt-10'>
+        //                     <ShimmerDiv mode="light" height={45} width={200} />
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </>
     )
 }
 

@@ -96,7 +96,7 @@ function ContactDetail() {
     const router = useRouter()
 
     function onSubmit(data) {
-        console.log('Form Data', data)
+        // console.log('Form Data', data)
         dispatch(addUserAddress(data))
         router.replace(`/payment?totalAmount=${totalProducts.map((item) => {
             let searchCart = addedCartItem.find((prod) => prod.product_id == item.id)

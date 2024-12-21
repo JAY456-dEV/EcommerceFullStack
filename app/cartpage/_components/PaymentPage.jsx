@@ -77,7 +77,7 @@ const PaymentMainPage = ({ amount }) => {
     console.log(userAddress)
 
     async function handleSendMail() {
-        console.log('Redux Address', userAddress);
+        // console.log('Redux Address', userAddress);
         try {
             const res = await fetch('/api/mail-handler', {
                 method: 'POST',

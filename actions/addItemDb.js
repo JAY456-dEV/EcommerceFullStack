@@ -16,7 +16,7 @@ export async function addItemDb(item) {
         },
     });
 
-    console.log('item already exist in cart', checkItemAlreadyExist)
+    // console.log('item already exist in cart', checkItemAlreadyExist)
     // if (checkItemAlreadyExist) {
     //     return null
     // }
