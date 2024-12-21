@@ -99,7 +99,8 @@ export default async function mailHandler(req, res) {
 
     try {
       await transporter.sendMail({
-        ...mailOptions,
+        from: 'Ecommerce Site',
+        to: userAddress.email,
         subject: "Payment Confirmation",
         ...generateEmailContent(userAddress),
         // text: `Payment confirmation for address: ${userAddress}`,
